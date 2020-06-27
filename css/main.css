@@ -1,0 +1,698 @@
+/* ====================================================
+  Template Name: Doob HTML5 landing page
+  Template URI: http://asifjail.xyz
+  Description: Doob HTML5 landing page
+  Author: Asif
+  Author URI: http://asifjail.xyz
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+01. Template Default CSS 
+02. header css
+03. home CSS 
+04. service CSS 
+05. company CSS 
+06. portfolio CSS 
+07. blog CSS 
+08. contact CSS 
+09. footer CSS 
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+li a {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/* ..................................
+ 02. header css 
+.................................. */
+
+header {
+  padding: 40px 0 0 0;
+  /* position: sticky; */
+  transition: 0.2s;
+}
+
+header.header-bg {
+  background-color: #fff;
+  padding: 20px 0;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.main-menu li {
+  padding: 0 20px;
+}
+
+.main-menu li:first-child {
+  padding-left: 0
+}
+
+.main-menu li:last-child {
+  padding-right: 0;
+}
+
+.main-menu li>a {
+  font-size: 18px;
+  color: #314584 !important;
+  font-weight: 600;
+  padding: 0 !important;
+}
+
+.main-menu li.active>a,
+.main-menu li:hover>a {
+  color: #ff3946 !important;
+}
+
+.main-menu li a i {
+  margin-left: 5px;
+}
+
+.dropdown {
+  margin-top: 10px;
+}
+
+.nav-link.nav-button {
+  padding: 10px 30px !important;
+  color: #ff3946 !important;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 5px rgba(25, 45, 51, 0.15));
+  background-color: #ffffff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.nav-link.nav-button:hover {
+  color: #fff !important;
+  background-color: #ff3946;
+}
+
+
+
+/* ..................................
+ 03. home CSS 
+.................................. */
+
+.home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: url(../img/home.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 42%;
+  z-index: -1;
+}
+
+.home-content {
+  margin-top: -50px;
+}
+
+.home-content h1 {
+  font-size: 73px;
+  letter-spacing: 1px;
+  line-height: 96px;
+  color: #314584;
+  font-weight: 600;
+}
+
+.home-content p {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #6e757a;
+  font-weight: 400;
+}
+
+.home-btn {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 25px;
+  filter: drop-shadow(0px 5px 5px rgba(255, 57, 70, 0.15));
+  background-color: #ff3946;
+}
+
+.home-btn:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.home-btn-alt {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 25px;
+  filter: drop-shadow(0px 5px 5px rgba(255, 57, 70, 0.15));
+  background-color: #fff;
+}
+
+.home-btn-alt:hover {
+  background-color: #ff3946;
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ..................................
+ 04. service CSS 
+.................................. */
+
+.service {
+  position: relative;
+  margin-top: 75px;
+}
+
+.service:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -40px;
+  background: url(../img/shape-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 295px;
+  height: 985px;
+  z-index: -1;
+}
+
+.service:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 78%;
+  background: url(../img/shape-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 335px;
+  height: 855px;
+  z-index: -1;
+}
+
+.service-intro {
+  margin-bottom: 30px;
+}
+
+.service-intro h3 {
+  font-size: 45px;
+  line-height: 65px;
+  color: #314584;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.service-btn {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+  width: 155px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 20px;
+  filter: drop-shadow(0px 5px 5px rgba(255, 57, 70, 0.15));
+  background-color: #ff3946;
+}
+
+.service-btn:hover {
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.service-box {
+  filter: drop-shadow(0px 5px 5px rgba(25, 45, 51, 0.15));
+  background-color: #ffffff;
+  padding: 30px 40px 50px 40px;
+  margin: 0 20px 30px 25px;
+  transition: 0.45s;
+}
+
+.service-box:hover {
+  background: #ff3946;
+}
+
+.service-box:hover h4,
+.service-box:hover p {
+  color: #fff;
+}
+
+.service-box img {
+  height: auto;
+}
+
+.service-box h4 {
+  margin-top: 60px;
+  font-size: 27px;
+  color: #314584;
+  font-weight: 600;
+}
+
+.service-box p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #314584;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+/* ..................................
+ 05. company CSS 
+.................................. */
+.company {
+  padding-top: 195px;
+  position: relative;
+}
+
+.section-title h5 {
+  font-size: 18px;
+  color: #ff3946;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-title h3 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #314584;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.company-slide-show {
+  position: relative;
+}
+
+.company-prev,
+.company-next,
+.portfolio-prev,
+.portfolio-next,
+.blog-prev,
+.blog-next {
+  position: absolute;
+  cursor: pointer;
+}
+
+.company-prev,
+.portfolio-prev,
+.blog-prev {
+  font-size: 18px;
+  color: #6e757a;
+}
+
+.company-prev:hover,
+.portfolio-prev:hover,
+.blog-prev:hover,
+.company-next:hover,
+.portfolio-next:hover,
+.blog-next:hover {
+  color: #ff3946;
+}
+
+.company-prev {
+  left: 20px;
+  bottom: -51px;
+}
+
+.company-next,
+.portfolio-next,
+.blog-next {
+  font-size: 30px;
+  color: #314584;
+}
+
+.company-next {
+  left: 50px;
+  bottom: -60px;
+}
+
+.company-details .section-title h3 {
+  margin-top: 15px;
+}
+
+.company-details p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #314584;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.company-details p:last-child {
+  margin-top: -10px;
+}
+
+/* ..................................
+ 06. portfolio CSS 
+.................................. */
+
+.portfolio {
+  margin-top: 205px;
+  position: relative;
+}
+
+.portfolio:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: url(../img/shape-3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 920px;
+  height: 905px;
+  z-index: -1;
+}
+
+.portfolio-slide-show {
+  margin-top: 50px;
+  position: relative;
+}
+
+.portfolio-prev {
+  right: 50px;
+  top: -100px;
+}
+
+.portfolio-next {
+  right: 0;
+  top: -109px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.portfolio-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.portfolio-item:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff3946;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ..................................
+ 07. blog CSS 
+.................................. */
+
+.blog {
+  padding-top: 140px;
+  position: relative;
+}
+
+.blog:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/shape-4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 415px;
+  height: 665px;
+  z-index: -1;
+}
+
+.blog-slide-show {
+  margin-top: 50px;
+  position: relative;
+}
+
+.blog-prev {
+  right: 50px;
+  top: -100px;
+}
+
+.blog-next {
+  right: 0;
+  top: -109px;
+}
+
+.blog-item {
+  filter: drop-shadow(0px 5px 5px rgba(25, 45, 51, 0.15));
+  background-color: #ffffff;
+  transition: 0.3s;
+  padding: 50px 45px 90px 45px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.blog-item:hover {
+  background-color: #ff3946;
+}
+
+.blog-item:hover h4,
+.blog-item:hover span,
+.blog-item:hover p,
+.blog-item:hover i {
+  color: #fff;
+}
+
+.blog-item h4 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #314584;
+  font-weight: 600;
+}
+
+.blog-item span {
+  font-size: 14px;
+  line-height: 30px;
+  color: #6e757a;
+  font-weight: 400;
+}
+
+.blog-item p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #314584;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.blog-item i {
+  color: #ff3946;
+  font-size: 29px;
+  position: absolute;
+  right: 25px;
+  bottom: 50px;
+}
+
+/* ..................................
+ 08. contact CSS 
+.................................. */
+.contact {
+  margin-top: 140px;
+  margin-bottom: 70px;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.input-text,
+.input-message {
+  border: none;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 60px;
+  background-color: #f4fafe;
+}
+
+.input-message {
+  height: 120px;
+  resize: none;
+}
+
+.input-text::placeholder,
+.input-message::placeholder {
+  font-size: 18px;
+  line-height: 21px;
+  color: #314584;
+  font-weight: 600;
+}
+
+.contact-btn {
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 25px;
+  filter: drop-shadow(0px 5px 5px rgba(255, 57, 70, 0.15));
+  background-color: #ff3946;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.contact-btn:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ..................................
+ 09. footer CSS 
+.................................. */
+
+footer {
+  padding: 65px 0 50px 0;
+  text-align: center;
+  background-color: #314584;
+}
+
+footer h5 {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer h2 {
+  font-size: 48px;
+  color: #ff3946;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-menu li {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 23px;
+}
+
+.footer-menu li:hover,
+.footer-social li:hover {
+  color: #ff3946;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.footer-social li {
+  margin: 0 40px;
+  font-size: 36px;
+  color: #fff;
+}
